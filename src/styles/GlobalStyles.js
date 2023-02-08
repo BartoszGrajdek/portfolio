@@ -12,4 +12,7 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 10px;
         height:100%;
     }
+    body, #root {
+        height: 100%;
+    }
 `;
