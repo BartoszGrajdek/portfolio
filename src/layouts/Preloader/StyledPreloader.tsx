@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export const StyledPreloader = styled.div`
-	height: 100%;
-	width: 100%;
-	padding: 20% 20%;
-	background-color: #2c3333;
+	height: 100vh;
+	width: 100vw;
+	padding: 20vh 20vw;
 
 	display: flex;
 	flex-direction: column;

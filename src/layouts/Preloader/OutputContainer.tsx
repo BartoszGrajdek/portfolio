@@ -7,12 +7,14 @@ export const OutputContainer = ({
 	setIsWaiting,
 	index,
 	setIndex,
+	isPageChoosen,
 }: {
 	phrasesList: Array<string>;
 	isWaiting: boolean;
 	setIsWaiting: Dispatch<SetStateAction<boolean>>;
 	index: number;
 	setIndex: Dispatch<SetStateAction<number>>;
+	isPageChoosen: boolean;
 }) => {
 	const [list, setList] = useState([]);
 
@@ -27,7 +29,12 @@ export const OutputContainer = ({
 	return (
 		<StyledOutputContainer>
 			{list.map((e, i) => (
-				<span key={i}>{e}</span>
+				<span key={i}>
+					{e}{' '}
+					{i + 1 === phrasesList.length && !isPageChoosen && (
+						<i>(Use arrows & enter to choose)</i>
+					)}
+				</span>
 			))}
 		</StyledOutputContainer>
 	);
