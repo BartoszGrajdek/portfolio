@@ -1,7 +1,7 @@
 import { SetStateAction, Dispatch } from 'react';
 
 export const typewriter = (string: string, currentString: string, setString: Dispatch<SetStateAction<string>>, setIsWaiting: Dispatch<SetStateAction<boolean>>, index: number) => {
-    const interval = Math.floor(Math.random() * (150 - 10 + 1) + 10);
+    const interval = Math.floor(Math.random() * (50 - 10 + 1) + 10);
     const letters = string.split('');
     if (index + 1 <= letters.length) {
         const character = letters[index];

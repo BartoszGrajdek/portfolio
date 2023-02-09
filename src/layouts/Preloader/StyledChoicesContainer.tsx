@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { fadeIn } from '../../styles/Animations';
 
-export const StyledOutputContainer = styled.div`
+export const StyledChoicesContainer = styled.div`
 	width: 100%;
 	margin-bottom: 4rem;
 
@@ -10,6 +11,8 @@ export const StyledOutputContainer = styled.div`
 	align-items: flex-start;
 	row-gap: 2rem;
 	column-gap: 2rem;
+
+	animation: 0.5s 1 ${fadeIn};
 
 	& span {
 		width: 100%;

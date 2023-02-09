@@ -25,7 +25,7 @@ export const InputContainer = ({
 			temp = temp.replace(/\s+/g, '');
 			setText(temp);
 		}
-	}, [isWaiting]);
+	}, [isWaiting, phrasesList]);
 
 	return (
 		<StyledInputContainer>
