@@ -10,14 +10,23 @@ export const ChoicesConainer = ({
 }) => {
 	const [activeIndex, setActiveIndex] = useState(0);
 
-	const choicesList = ['Test 1', 'Test 2', 'Test 3', 'Test 4'];
+	const choicesList = [
+		'My description',
+		'All of my skills',
+		"The work experience I've got",
+		'Some of the projects I made',
+		'Contact info',
+	];
 
 	useLayoutEffect(() => {
 		if (keyStroke.trim() === 'ArrowUp' && activeIndex > 0)
 			setActiveIndex(activeIndex - 1);
-		if (keyStroke.trim() === 'ArrowDown' && activeIndex < 3)
+		if (
+			keyStroke.trim() === 'ArrowDown' &&
+			activeIndex < choicesList.length - 1
+		)
 			setActiveIndex(activeIndex + 1);
-		if (keyStroke.trim() === 'Enter') choosePage(1);
+		if (keyStroke.trim() === 'Enter') choosePage(activeIndex);
 	}, [keyStroke]);
 
 	return (

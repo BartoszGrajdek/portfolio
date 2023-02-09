@@ -19,7 +19,7 @@ export const Preloader = ({
 		'Let me introduce myself first...',
 		'I am Bartosz',
 		"And I'm working as a Web Developer",
-		'What do you want to know about me?',
+		'What would you like to get to know about me?',
 	]);
 
 	const choosePage = (id: number) => {
