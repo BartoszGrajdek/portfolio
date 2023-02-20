@@ -76,17 +76,4 @@ export const StyledHeader = styled.div`
 
 		transform: translateY(-50%);
 	}
-
-	& span.active {
-		color: #e7f6f2 !important;
-
-		&::before,
-		&::after {
-			color: #e7f6f2 !important;
-		}
-	}
-
-	/* & span::after {
-		
-	} */
 `;
